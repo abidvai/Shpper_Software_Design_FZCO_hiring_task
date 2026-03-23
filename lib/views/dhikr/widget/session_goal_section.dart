@@ -1,3 +1,4 @@
+import 'package:dhikr_hiring_task/providers/session_goal_provider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
@@ -12,6 +13,7 @@ class SessionGoalSection extends ConsumerWidget {
   @override
   Widget build(BuildContext context, WidgetRef ref) {
     final state = ref.watch(dhikrProvider);
+    final sessionGoalProgress = ref.watch(sessionGoalProvider);
 
     return Column(
       children: [
@@ -50,6 +52,16 @@ class SessionGoalSection extends ConsumerWidget {
               ),
             ),
           ],
+        ),
+        SizedBox(height: 10.h),
+        ClipRRect(
+          borderRadius: BorderRadius.circular(10.r),
+          child: LinearProgressIndicator(
+            value: sessionGoalProgress,
+            minHeight: 6.h,
+            backgroundColor: Colors.white12,
+            valueColor: AlwaysStoppedAnimation<Color>(AppColors.primary),
+          ),
         ),
       ],
     );

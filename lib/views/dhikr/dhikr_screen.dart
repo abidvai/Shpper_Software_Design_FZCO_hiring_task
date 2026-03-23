@@ -1,6 +1,6 @@
 import 'package:dhikr_hiring_task/utils/color.dart';
 import 'package:dhikr_hiring_task/views/dhikr/widget/change_voice_button.dart';
-import 'package:dhikr_hiring_task/views/dhikr/widget/global_live_count_section.dart';
+import 'package:dhikr_hiring_task/views/dhikr/widget/global_live_count_card.dart';
 import 'package:dhikr_hiring_task/views/dhikr/widget/recitation_button.dart';
 import 'package:dhikr_hiring_task/views/dhikr/widget/session_goal_section.dart';
 import 'package:flutter/material.dart';
