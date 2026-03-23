@@ -1,4 +1,4 @@
-# 📿 Dhikr Counter — Flutter Hiring Task
+# Dhikr Counter — Flutter Hiring Task
 
 A beautifully crafted Dhikr Counter app built with Flutter and Riverpod, inspired by the provided reference UI. The app allows users to perform and track their daily Islamic remembrance (Dhikr) with a clean, immersive dark-gold interface.
 
@@ -203,7 +203,7 @@ RecitationButton rebuilds      → circle count updates
 - No backend/API — global count is simulated with `Stream.periodic`. In production this would connect to a real-time database (e.g. Firebase).
 - No authentication — the "JOINED" label in the app bar is static UI, not tied to a real user session.
 - Session is not persisted — closing the app resets the counter. SharedPreferences persistence was considered out of scope for this task.
-- Design size set to `Size(390, 844)` in `ScreenUtilInit` based on standard iPhone 14 dimensions used in the reference UI.
+- Design size set to `Size(375, 872)` in `ScreenUtilInit` based on standard iPhone 14 dimensions used in the reference UI.
 - Arabic font using Google Fonts `Amiri` as it best matches the calligraphic style in the reference.
 
 ---
